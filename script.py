@@ -37,7 +37,7 @@ def get_reddit_posts():
                          client_secret='70OS96sRs67swIusEX7MYGUqeQ_klA',
                          user_agent='swag by u/L0n3ly_Y',
                          username='L0n3ly_Y',
-                         password='03042007')
+                         password='yomama')
     # Designate subreddit to explore
     subreddit = reddit.subreddit(SUBREDDIT_TO_EXPLORE)
     matching_posts_info = []
