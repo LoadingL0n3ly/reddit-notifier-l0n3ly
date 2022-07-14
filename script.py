@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 import secrets
 
 SUBREDDIT_TO_EXPLORE = 'hardwareswap'
-NUM_POSTS_TO_EXPLORE = 100
+NUM_POSTS_TO_EXPLORE = 10
 SCORE_WEIGHT = 3
 COMMENT_WEIGHT = 1
 # The following is the minimum relevant weighted score to be a match, 
@@ -37,7 +37,7 @@ def get_reddit_posts():
                          client_secret='70OS96sRs67swIusEX7MYGUqeQ_klA',
                          user_agent='swag by u/L0n3ly_Y',
                          username='L0n3ly_Y',
-                         password='yomama')
+                         password='03042007')
     # Designate subreddit to explore
     subreddit = reddit.subreddit(SUBREDDIT_TO_EXPLORE)
     matching_posts_info = []
@@ -73,7 +73,7 @@ def send_email():
         subject = 'Hey you! I have something SPECIAL for you to check out...'
         # Port 587 is used when sending emails from an app with TLS required
         # See https://support.google.com/a/answer/176600?hl=en
-        server = smtplib.SMTP('smtp.gmail.com:587')
+        server = smtplib.SMTP('smtp.gmail.com:578')
         server.ehlo()
         server.starttls()
         server.login('redditNotif@gmail.com', 'awesomeNotifier1')
