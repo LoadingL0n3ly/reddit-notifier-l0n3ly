@@ -1,8 +1,0 @@
-MY_CLIENT_ID = 'aZG6oKqzaoEFFEYiAIlTtQd'
-MY_CLIENT_SECRET='70OS96sRs67swIusEX7MYGUqeQ_klA'
-MY_USER_AGENT='swag by /u/L0n3ly_Y'
-MY_REDDIT_USERNAME='L0n3ly_Y'
-MY_REDDIT_PASSWORD='03042007'
-SENDER_EMAIL = 'redditNotif@gmail.com'
-SENDER_PASSWORD = 'awesomeNotifier1'
-RECEIVER_EMAIL = 'fedor.khaldin@gmail.com'

@@ -1,0 +1,15 @@
+apprise:
+  - discord://996945156941037638/gUJQzXeBmxfdgx1_d0t9IS_QQKFm_02s7fteNyRMXs3O1k9s8T2mue4IpBB5O64VPjOH
+  
+reddit:
+  client: 23FFeigQ6NaKWjXGPaL7MQ
+  secret: 851nQE7EpWvXyN9z4-L886w3FAl1nQ
+  agent: Notifier by u/L0n3ly_Y
+    
+  subreddits:
+    hardwareswap:
+      - 'free'
+      - 'Apple Watch'
+      - 'ultrawide'
+
+ 
