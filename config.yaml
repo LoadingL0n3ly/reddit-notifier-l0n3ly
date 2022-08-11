@@ -8,9 +8,7 @@ reddit:
     
   subreddits:
     hardwareswap:
-      - 'free'
       - 'headset'
-      - 'keycaps'
       - 'ultrawide'
       - 'Beyerdynamic DT 990 Pro'
       - 'DT 990 Pro'
