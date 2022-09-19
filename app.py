@@ -10,7 +10,7 @@ import prawcore
 import yaml
 
 CONFIG_PATH = os.getenv("RPN_CONFIG", "config.yaml")
-LOGGING = os.getenv("RPN_LOGGING", "FALSE")
+LOGGING = os.getenv("RPN_LOGGING", "TRUE")
 
 YAML_KEY_APPRISE = "apprise"
 YAML_KEY_REDDIT = "reddit"
@@ -23,6 +23,7 @@ YAML_KEY_AGENT = "agent"
 def main():
     """Run application."""
     print("Starting Reddit Post Notifier")
+    print("start time is ", datetime.datetime.now())
     config = get_config()
     apprise_config = config[YAML_KEY_APPRISE]
     reddit_config = config[YAML_KEY_REDDIT]
@@ -58,6 +59,7 @@ def stream_submissions(reddit, subreddits, apprise_client):
             print("Reddit API Error: ")
             print(exception)
             print("Pausing for 30 seconds...")
+            print("current time is ", datetime.datetime.now())
             time.sleep(30)
 
 
@@ -69,7 +71,7 @@ def process_submission(submission, subreddits, apprise_client):
 
     if any(term in title.lower() for term in search_terms):
         notify(apprise_client, title, submission.id)
-        if LOGGING != "FALSE":
+        if LOGGING != "TRUEe":
             print(datetime.datetime.fromtimestamp(submission.created_utc),
                   " " + "r/" + sub + ": " + title)
 
