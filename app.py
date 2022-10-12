@@ -36,6 +36,8 @@ def main():
         reddit_config[YAML_KEY_AGENT]
     )
 
+    notify(apprise_client, "Succesfully Booted Up", "awesome!!")
+    print("sent startup notification")
     validate_subreddits(reddit_client, subreddits)
     stream_submissions(reddit_client, subreddits, apprise_client)
 
